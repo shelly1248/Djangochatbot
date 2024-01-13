@@ -1,0 +1,37 @@
+@keyframes slideInFromBottom {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+/* 챗봇 메시지 스타일 */
+.assistant-message {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.assistant-message .message-avatar {
+  width: 40px; /* 이미지 크기 조정 */
+  height: 40px; /* 이미지 크기 조정 */
+  border-radius: 50%; /* 원형으로 만들기 */
+  margin-right: 10px; /* 메시지와의 간격 */
+}
+
+.assistant-message .message-bubble {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #e5e5ea; /* 챗봇 메시지 배경색 */
+  max-width: 70%; /* 메시지 최대 너비 조정 */
+}
+
+/* 사용자 메시지 스타일 유지 */
+.user-message .message-bubble {
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f0f0f0; /* 사용자 메시지 배경색 */
+  max-width: 70%; /* 메시지 최대 너비 조정 */
+}
